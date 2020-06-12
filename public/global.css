@@ -1,0 +1,122 @@
+:root {
+  --sidebar-width: var(--space-32x);
+  --layout-columns: var(--sidebar-width) auto;
+  --layout-rows: var(--space-8x) auto;
+  --hpad: var(--space-2x);
+  --vpad: var(--space-1x);
+  --background-color: hsl(240, 25%, 9%);
+}
+
+body {
+  color: #333;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  display: grid;
+  grid-template-columns: var(--layout-columns);
+  align-items: stretch;
+  align-content: start;
+}
+
+header h1 a {
+  color: white;
+  text-decoration: none;
+  padding: var(--vpad) var(--hpad);
+  font-size: var(--text-06);
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: start;
+  grid-column-gap: var(--space-1x);
+  font-weight: 400;
+}
+
+nav {
+  padding-top: var(--space-6x);
+  align-self: stretch;
+  width: var(--sidebar-width);
+  min-height: calc(100vh);
+}
+
+nav > div {
+  position: sticky;
+  top: var(--space-6x);
+  left: 0;
+  display: grid;
+  align-self: stretch;
+  align-items: start;
+  align-content: stretch;
+}
+
+nav > div > :first-child {
+  align-self: start;
+}
+
+nav > div > :last-child {
+  align-self: end;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  /* min-height: 700px; */
+  padding-top: var(--space-8x);
+  padding-bottom: var(--space-8x);
+  padding-bottom: var(--space-12x);
+}
+
+@media (max-width: 1400px) {
+  main {
+    width: 100%;
+  }
+}
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+input:disabled {
+  color: #ccc;
+}
+
+input[type="range"] {
+  height: 0;
+}
+
+button {
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+button:disabled {
+  color: #999;
+}
+
+button:not(:disabled):active {
+  background-color: #ddd;
+}
+
+button:focus {
+  border-color: #666;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
