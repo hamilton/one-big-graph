@@ -16,7 +16,7 @@ metric charts.
 Get the template and set it up:
 
 ```
-degit hamilton/one-big-graph my-graphs
+degit hamilton/one-big-graph#main my-graphs
 cd my-graphs
 npm install
 ```
