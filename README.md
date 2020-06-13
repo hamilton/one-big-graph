@@ -44,7 +44,7 @@ Now that you've fetched the data, you will need a chart config. We will add it
 to `/public/config/index.js`.
 
 ```javascript
-export default [
+export const plots = [
   {
     // 'key' is the unique slug in the url that pulls up the graph.
     // It needs to be unique!
@@ -52,6 +52,8 @@ export default [
 
     // source is the file in /public/data/. Right now it has to be json,
     // which is what the cache.js script returns.
+    // In theory, you can put any tidy-formatted JSON filee in
+    // /public/data/ and serve it.
     source: "first-chart.json",
 
     title: "Here's one big chart", // the display title
