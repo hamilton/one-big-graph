@@ -63,7 +63,8 @@ export const plots = [
     x: "date", // the column that maps to the x positional dimension
 
     // 'y': the column(s) that map to the y position dimensions. If you're only selecting
-    // a single column, just wrap a single string in an array for now like ["value01"]
+    // a single column, just wrap a single string in an array for now like ["value01"].
+    // I'll fix this soon
     y: ["value01", "value02"],
 
     // 'group': the group field splits the data into groups by values in the column
