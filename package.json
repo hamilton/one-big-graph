@@ -36,7 +36,7 @@
     "rollup-plugin-postcss": "^2.5.0",
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
-    "svelte": "^3.20.1",
+    "svelte": "^4.2.19",
     "@graph-paper/datagraphic": "0.0.0-alpha.12",
     "@graph-paper/elements": "0.0.0-alpha.12",
     "@graph-paper/guides": "0.0.0-alpha.12",
